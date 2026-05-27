@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-sans: var(--font-syne), ui-sans-serif, system-ui, sans-serif;
+  --font-family-mono: "DM Mono", "Fira Code", ui-monospace, monospace;
+}
+
+@keyframes scanline {
+  0%   { top: 10px; }
+  100% { top: calc(100% - 10px); }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0f172a; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #475569; }
