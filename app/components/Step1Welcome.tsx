@@ -90,7 +90,7 @@ export default function Step1Welcome({ onNext, savedProfile }: Step1Props) {
       </h1>
       <p className="mb-8 max-w-2xl font-mono text-sm leading-relaxed text-slate-400">
         A comprehensive three-module evaluation combining live facial expression
-        analysis, natural language sentiment review, and the clinically validated
+        analysis, dual natural language sentiment review, and the clinically validated
         BDI-II. Please complete your registration to begin.
       </p>
 
@@ -220,8 +220,8 @@ export default function Step1Welcome({ onNext, savedProfile }: Step1Props) {
         <p className="font-mono text-[12px] leading-relaxed text-amber-400/80">
           <strong className="text-amber-400">Privacy Notice:</strong> Your details
           are used solely for this screening session. Webcam frames are processed
-          in real-time and not stored. Text is sent to the Gemini API and your local
-          BERT service. With your consent, the session summary is securely saved to
+          in real-time and not stored. Text is sent to the Gemini API and our own
+          BERT API service. With your consent, the session summary is securely saved to
           our encrypted database for clinical reference.
         </p>
       </div>

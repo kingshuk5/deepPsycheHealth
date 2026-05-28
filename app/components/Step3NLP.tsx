@@ -92,22 +92,14 @@ export default function Step3NLP({
 
       <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
         {/* Info */}
-        <div className="mb-5 rounded-lg border border-blue-500/15 bg-blue-500/6 px-4 py-3 font-mono text-[12px] text-blue-400/80">
-          Gemini uses{" "}
-          <code className="rounded bg-slate-800 px-1 py-0.5 text-[11px] text-blue-300">
-            NEXT_PUBLIC_GEMINI_API_KEY
-          </code>{" "}
-          · BERT targets{" "}
-          <code className="rounded bg-slate-800 px-1 py-0.5 text-[11px] text-blue-300">
-            NEXT_PUBLIC_BERT_API_URL
-          </code>{" "}
-          (default: <code className="text-blue-300">http://localhost:8000</code>)
-        </div>
-
-        {/* Textarea */}
-        <label className="mb-1.5 block font-mono text-[10px] uppercase tracking-widest text-slate-500">
+        <label className="mb-5 rounded-lg border border-blue-500/15 bg-blue-500/6 px-4 py-3  font-mono text-[14px] text-blue-400/80">
           How have you been feeling? (past two weeks)
         </label>
+
+        {/* Textarea
+        <label className="mb-1.5 block font-mono text-[10px] uppercase tracking-widest text-slate-500">
+          How have you been feeling? (past two weeks)
+        </label> */}
         <textarea
           value={text}
           onChange={(e) => handleTextChange(e.target.value)}

@@ -92,7 +92,7 @@ export default function Step2Webcam({ onNext, onBack, onExpressionsUpdate }: Ste
       <div className="mb-6">
         <h2 className="text-2xl font-bold tracking-tight">Live Facial Expression Stream</h2>
         <p className="mt-1 font-mono text-sm text-slate-400">
-          Real-time affective state analysis via WebSocket frame streaming at 200ms intervals.
+          Real-time face analysis via frame streaming.
         </p>
       </div>
 
